@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: "Helvetica Neue";
+      margin: 20px;
+      display: block;
+      font-size: 15px;
+      line-height: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container{
+      position: relative;
+      overflow: auto;
+      display: flexbox;
+    }
+    
+    
+    .top{
+      height: 225px;
+    }
+    
+    #pricing{
+      text-align: center; 
+      margin-top: 3.5%;
+      height: 200px;
+    }
+
+    #pricing h1{
+      font-size: 50px;
+    }
+
+    #pricing h3{
+      font-size: 20px;
+    }
+
+    .inline h2{
+      margin-top: 10px;
+    }
+
+    .inline{
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 18.5%;
+      width: 65%;
+      margin-left: 17.5%;
+      
+    }
+
+    .inline li{
+      display: inline;
+      
+    }
+
+    .item{
+      margin-left: 18%;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+
+    .itembox{
+      width: 300px;
+      height: 300px;
+      box-sizing: border-box;
+      border: 1px solid lightgrey;
+      border-radius: 7px;
+      margin-right: 30px;
+    }
+
+    .itembox_type{
+      border-bottom: 1px solid lightgrey;
+    }
+
+    .itembox_content{
+      margin-top: 5%;
+    }
+    button{
+      width: 90%;
+      height: 45px;
+      color: rgb(75, 75, 181);
+      border: 1px solid blue;
+      background-color: white;
+      border-radius: 7px;
+      right: 0;
+      margin-top: 5%;
+      font-size: 20px;
+    }
+
+    button:hover{
+      color: white;
+      background-color: blue;
+    }
+
+    .compare_plans{
+      text-align: center;
+      padding: 5px;
+      font-size: 40px;
+    }
+
+    table {
+      width: 63%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-top: 40px;
+    }
+
+     tr,td {
+      border-bottom: 1px solid lightgrey;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      
+      font-weight: bold;
+      padding: 10px;
+    }
+    .feature-name{
+      font-weight: bold;
+    }
+
+    .checkmark {
+      font-size: 25px;
+      color: black;
+    }
+
+    .feature-name {
+      text-align: left;
+      padding-left: 20px;
+    }
+    .footer{
+      display: flex;
+      margin-left: 15%;
+    }
+    .footer_box{
+      width: 200px;
+      margin: 40%;
+    }
+    .footer_box li{
+      list-style-type: none;
+    }
+    .line{
+      border-bottom: 1px solid lightgrey;
+      margin-top: 50px;
+      width: 63%;
+      margin-left: 18.5%;
+      padding: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      
+      <div class="top">
+        <div class="inline">
+          <h2 style="font-weight: 400;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>&nbsp;Pricing Example
+          </h2>
+         
+          <ul>
+          <li>Features&nbsp;</li>
+          <li>Enterprise&nbsp;</li>
+          <li>Support&nbsp;</li>
+          <li>Pricing&nbsp;</li>
+          </ul>
+        </div>
+        
+        <div id="pricing"><h1>Pricing</h1><h3 style="font-weight: 400; color: rgb(46, 92, 106)">Quickly build an effective pricing table for your potential customers with this <br> Bootstrap example. It’s built with default Bootstrap components and utilities <br> with little customization.</h3></div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="item">
+        <div class="itembox">
+          <div class="itembox_type">
+            <h2>Free</h2>
+          </div>
+          <div class="itembox_content">
+            <h1>$0/mo</h1>
+            10 users included <br>
+            2 GB of storage <br>
+            Email support <br>
+            Help center access
+          </div>
+            <button>
+              Sign up for free</button>
+            </div>
+        <div class="itembox">
+          <div class="itembox_type">
+            <h2>Pro</h2>
+          </div>
+          <div class="itembox_content">
+            
+            <h1>$15/mo</h1>
+            <div>20 users included <br>
+              10 GB of storage <br>
+              Priority email support <br>
+              Help center access <br></div>
+              <button>Get started</button>
+        </div>
+        </div>
+        <div class="itembox">
+          <div class="itembox_type">
+            <h2>Enterprise</h2>
+          </div>
+          <div class="itembox_content">
+            <h1>$29/mo</h1>
+            <div>30 users included <br>
+              15 GB of storage <br>
+              Priority email support <br>
+              Help center access</div>
+              <button>Contact us</button>
+          </div>
+        </div>
+      </div>
+      <h1 class="compare_plans">Compare plans</h1>
+      <div class="table">
+        <table class="table_group">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Free</th>
+              <th>Pro</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Public</td>
+              <td class="checkmark">✓</td>
+              <td class="checkmark">✓</td>
+              <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Private</td>
+              <td></td>
+              <td class="checkmark">✓</td>
+              <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Permissions</td>
+              <td class="checkmark">✓</td>
+              <td class="checkmark">✓</td>
+              
+              <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Sharing</td>
+              <td></td>
+              <td class="checkmark">✓</td>
+              <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Unlimited members</td>
+              <td></td>
+              <td></td>
+              <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Extra security</td>
+              <td></td>
+              <td></td>
+              <td class="checkmark">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="footer">
+      <div class="row">
+        <div class="footer_1">
+          <div class="footer_box">
+            <div><img src="file:///Users/jeongminchan/Downloads/bootstrap-5.3.3-examples/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"></div>
+            <p>© 2017–2024</p>
+          </div>
+        </div>
+      </div>
+        <div class="footer_2">
+          <div class="footer_box">
+            <ul>
+              <li style="font-weight: bold; font-size: 20px;">Features</li>
+              <li>Cool stuff</li>
+              <li>Random feature</li>
+              <li>Team feature</li>
+              <li>Stuff for developers</li>
+              <li>Another one</li>
+              <li>Last time</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_3">
+          <div class="footer_box">
+            <ul>
+              <li style="font-weight: bold; font-size: 20px;">Resources</li>
+              <li>Resource</li>
+              <li>Resource name</li>
+              <li>Another resource</li>
+              <li>Final resource</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_4">
+          <div class="footer_box">
+            <ul>
+              <li style="font-weight: bold; font-size: 20px;">About</li>
+              <li>Team</li>
+              <li>Locations</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</body>
+</html>
